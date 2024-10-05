@@ -1,0 +1,7 @@
+sub main() {
+    SpecialParams() {
+        //global_xp_factor(1.0);
+        RestoreRifleAmmoInSafeZone(false);
+        UnlimitedAmmoMode(true);
+    }
+}
