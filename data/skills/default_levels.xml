@@ -286,7 +286,7 @@
     
     <prop n="BluntDamageMul" v="0"/>
     <prop n="BluntForceMul" v="0"/>
-    <prop n="BluntWpnDurabilityLoss" v="1.0"/>
+    <prop n="BluntWpnDurabilityLoss" v="0.0"/>
     <prop n="BluntCriticalChance" v="0"/>
     <prop n="BluntCriticalDmgMul" v="0"/>
     <prop n="BluntCritSevereLimbProb" v="0.2"/>
@@ -294,7 +294,7 @@
     
     <prop n="CutDamageMul" v="0"/>
     <prop n="CutForceMul" v="0"/>
-    <prop n="CutWpnDurabilityLoss" v="1.0"/>
+    <prop n="CutWpnDurabilityLoss" v="0.0"/>
     <prop n="CutCriticalChance" v="0"/>
     <prop n="CutCriticalDmgMul" v="0"/>
     <prop n="CutCritSevereLimbProb" v="0.2"/>
@@ -351,8 +351,7 @@
         
     <!-- CHARGE ATTACK COMMON -->
     <prop n="ChargeSpreadProbability" v="0.0"/>     
-    <prop n="ChargeOverchargeDamage" v="0.0"/>
-	<prop n="ChargeAdditionalRange" v="0.15"/>
+    <prop n="ChargeOverchargeDamage" v="0.0"/>  
     
     <prop n="ChargeStaminaDecreaseFactor" v="0"/>
     <prop n="ChargeAutoReleaseTime" v="-1.0"/>  
@@ -465,7 +464,7 @@
     <prop n="ComboResetTime" v="5.0"/>
     <prop n="StompLevel" v="-1.0"/>                            <!-- enables stomper -->
     <prop n="DamageReductionAfterMovementDuration" v="5"/>
-    <prop n="MinimalPlayerBlastDamageOnExplosion" v="0.0"/>    <!-- it's minimal damage, that player receive when is knockdown after explosion -->
+    <prop n="MinimalPlayerBlastDamageOnExplosion" v="5.0"/>    <!-- it's minimal damage, that player receive when is knockdown after explosion -->
     <prop n="ThrownWeaponStickChance" v="1.0"/>
     <prop n="ThrownWeaponKOChance" v="0.0"/>
     <prop n="ThrowAdditionalPhysicsDamage" v="0.0"/>
@@ -498,8 +497,6 @@
 
     <!-- GROUND POUND -->
     <prop n="GroundPoundCooldown" v="-1.0"/>
-    <prop n="GroundPoundMinHeight" v="1.1"/>
-	
 
     <!-- JUMP ATTACK -->
     <prop n="JumpAttackStaminaUsage" v="0.5"/>
@@ -993,7 +990,6 @@
 <level id="10"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="66000"/></level> <!-- (+ 12000) -->
 <level id="11"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="78000"/></level> <!-- (+ 13000) -->
 <level id="12"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="92000"/></level> <!-- (+ 14000) -->
-<level id="13"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="107000"/></level> <!-- (+ 15000) -->
 <!-- PLAYER EXPERIENCE HELLRAID END-->
 
 <!-- SKILL POINTS LEGEND--> 
