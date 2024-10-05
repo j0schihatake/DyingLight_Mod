@@ -209,6 +209,7 @@
     <prop n="KnockDownMinHorzAngle" v="-30"/>
     <prop n="KnockDownMaxHorzAngle" v="30"/>
 	<prop n="BozakKnockdownTimeToDeath" v="45"/>
+	<prop n="KnockdownAfterKnockdownMinTime" v="0.6"/>
     
     <prop n="NearbyEnemiesSearchRange" v="7.0"/>
 	<prop n="SwimLookTimetMul" v="0.4"/>    
@@ -263,7 +264,7 @@
     <prop n="MaxHealth" v="100"/>                               <!-- Amount of player health -->
     <prop n="BaseMaxHealth" v="100"/>                           <!-- DEPRECATED, TO BE REMOVED -->
     <prop n="HealthCriticalLevel" v="25"/>                      
-    <prop n="HealthRegenerationMaxLevel" v="25"/>               <!-- Regenerates health up to this value. Post process depends on LowHealthEffectThreshold  -->
+    <prop n="HealthRegenerationMaxLevel" v="275"/>               <!-- Regenerates health up to this value. Post process depends on LowHealthEffectThreshold  -->
     <prop n="LowHealthEffectThreshold" v="1.0"/>                <!-- Defines the value of health when critical health post process is working, based on HealthCriticalLevel -->
     <prop n="HealthRegenerationDelay" v="4.0"/>                 <!-- Time after which player starts to regenerate, measured from last hit -->
     <prop n="HealthRegenerationTimeToMax" v="8.0"/>             <!-- Time needed to regenerate health up to HealthRegenerationMaxLevel -->
@@ -350,7 +351,8 @@
         
     <!-- CHARGE ATTACK COMMON -->
     <prop n="ChargeSpreadProbability" v="0.0"/>     
-    <prop n="ChargeOverchargeDamage" v="0.0"/>  
+    <prop n="ChargeOverchargeDamage" v="0.0"/>
+	<prop n="ChargeAdditionalRange" v="0.15"/>
     
     <prop n="ChargeStaminaDecreaseFactor" v="0"/>
     <prop n="ChargeAutoReleaseTime" v="-1.0"/>  
@@ -412,9 +414,9 @@
     
     <prop n="WeightCanCarry" v="100.0"/>
 
-    <prop n="MaxAmmoPistol" v="999"/>
-    <prop n="MaxAmmoRifle" v="999"/>
-    <prop n="MaxAmmoShotgun" v="999"/>
+    <prop n="MaxAmmoPistol" v="50"/>
+    <prop n="MaxAmmoRifle" v="120"/>
+    <prop n="MaxAmmoShotgun" v="20"/>
         
     <prop n="FirearmsPistolReloadTimeMul" v="1.0"/> 
     <prop n="FirearmsRevolverReloadTimeMul" v="1.0"/>   
@@ -496,6 +498,8 @@
 
     <!-- GROUND POUND -->
     <prop n="GroundPoundCooldown" v="-1.0"/>
+    <prop n="GroundPoundMinHeight" v="1.1"/>
+	
 
     <!-- JUMP ATTACK -->
     <prop n="JumpAttackStaminaUsage" v="0.5"/>
@@ -974,9 +978,23 @@
 <level id="4" type="Reputation"><prop n="ExpToNextLevelReputation" v="1000"/></level>
 <level id="5" type="Reputation"><prop n="ExpToNextLevelReputation" v="1250"/></level>
 <level id="6" type="Reputation"><prop n="ExpToNextLevelReputation" v="99999999"/></level>
-
-
 <!-- PLAYER EXPERIENCE REPUTATION END-->
+
+<!-- PLAYER EXPERIENCE HELLRAID-->
+<level id="1"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="10000"/></level> <!-- Takes about half of first floor to obtain. (First combat area). -->
+<level id="2"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="12500"/></level> <!-- (+ 2500) First floor +/- half into the second. -->
+<level id="3"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="16000"/></level> <!-- (+ 3500) Down to second floor. -->
+<level id="4"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="19500"/></level> <!-- (+ 4500) -->
+<level id="5"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="25000"/></level> <!-- (+ 5500) -->
+<level id="6"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="30500"/></level> <!-- (+ 6500) -->
+<level id="7"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="37000"/></level> <!-- (+ 7500) -->
+<level id="8"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="44500"/></level> <!-- (+ 8500) -->
+<level id="9"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="54000"/></level> <!-- (+ 9500) -->
+<level id="10"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="66000"/></level> <!-- (+ 12000) -->
+<level id="11"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="78000"/></level> <!-- (+ 13000) -->
+<level id="12"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="92000"/></level> <!-- (+ 14000) -->
+<level id="13"  type="Hellraid"><prop n="ExpToNextLevelHellraid" v="107000"/></level> <!-- (+ 15000) -->
+<!-- PLAYER EXPERIENCE HELLRAID END-->
 
 <!-- SKILL POINTS LEGEND--> 
 <level id="1" type="Legend"><prop n="SkillPointsLegend" v="0"/><prop n="LegendTier" v="0"/></level>
